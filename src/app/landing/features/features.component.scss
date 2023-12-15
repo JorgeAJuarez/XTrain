@@ -1,0 +1,117 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #333, #444);
+    padding: 20px;
+    /* ajusta según tu necesidad */
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, #f06, #09f);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.training-icon {
+    color: white;
+    font-size: 40px;
+}
+
+.title {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.login-button {
+    margin-top: 10px;
+    background-color: white;
+    color: #333;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), linear-gradient(to right, #31596d, #221d31);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    //border: 3px solid rgba(255, 255, 255, 0.1);
+    /* ajusta según tu necesidad */
+}
+
+.module-border-wrap {
+    margin: 15px;
+    display: flex;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), linear-gradient(to right, #92a3b6, #554052);
+    padding: 1px;
+}
+
+.icon-border-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(135deg, #FF3F58, rgb(112, 29, 142));
+    /* gradiente azul a rojo/rosa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    /* Efecto de sombra detrás del ícono */
+    position: relative;
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    padding: 2px
+}
+
+.icon-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5)), linear-gradient(135deg, #31596d, #221d31);
+    /* Efecto de sombra detrás del ícono */
+    position: relative;
+    border-radius: 50%;
+}
+
+.training-icon {
+    color: white;
+    font-size: 60px;
+    height: 60px;
+    width: 60px;
+}
+
+.title {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.login-button {
+    margin-top: 10px;
+    background-color: white;
+    color: #333;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+
+.flexic {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -210px
+}
