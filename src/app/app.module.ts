@@ -23,6 +23,14 @@ import { AdminEventScreenComponent } from './admin-event-screen/admin-event-scre
 import { AdminNoticeScreenComponent } from './admin-notice-screen/admin-notice-screen.component';
 import { LoginScreenComponent } from './login-screen/login-screen.component';
 import { AdminTeacherScreenComponent } from './admin-teacher-screen/admin-teacher-screen.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
+import { AlumnoDialogComponent } from './admin-alumn-screen/alumno-dialog.component';
+import { MatInputModule } from '@angular/material/input';
+import { TechnicDialogComponent } from './admin-technic-screen/technic-dialog.component';
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +48,8 @@ import { AdminTeacherScreenComponent } from './admin-teacher-screen/admin-teache
     AdminNoticeScreenComponent,
     LoginScreenComponent,
     AdminTeacherScreenComponent,
+    AlumnoDialogComponent,
+    TechnicDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +60,13 @@ import { AdminTeacherScreenComponent } from './admin-teacher-screen/admin-teache
     MatSidenavModule,
     MatIconModule,
     MatProgressBarModule,
-    MatSliderModule
+    MatSliderModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

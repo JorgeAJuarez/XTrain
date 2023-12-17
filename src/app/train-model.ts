@@ -1,65 +1,73 @@
 export interface Technic {
-    Level: string;
-    Type: string;
-    Name: string;
-    Explanation: string;
-    Sample: String;
+    level: string;
+    type: string;
+    name: string;
+    explanation: string;
+    sample: String;
 }
 
 export interface Train {
-    Technics: Technic[]
+    name: String;
+    descripcion: String;
+    technics: Technic[]
 }
 
 export interface Alumn {
-    Id: number;
-    Name: String;
-    Trains: Train[];
-    Level: String;
+    id: number;
+    name: String;
+    teacher: String;
+    trains: Train[];
+    level: String;
 }
 
 export interface Teacher {
-    Alumns: Alumn[];
-    Name: String;
-    Description: String;
-    Photo: String;
-    Permissions: Permission[];
+    id: number;
+    alumns: Alumn[];
+    name: String;
+    description: String;
+    photo: String;
+    permissions: Permission[];
 }
 
 export interface Permission {
-    Name: String;
+    name: String;
 }
 
 export interface School {
-    Name: String;
-    Teachers: Teacher[];
-    Description: String;
-    Location: String;
+    id: number;
+    name: String;
+    teachers: Teacher[];
+    description: String;
+    location: String;
 }
 
 export interface Academia {
-    Schools: School[];
-    Notices: Notice[];
-    Events: Event[];
-    Blog: BlogEntry;
+    schools: School[];
+    notices: Notice[];
+    events: Event[];
+    blog: BlogEntry;
 }
 
 export interface Notice {
-    Title: String;
-    Date: String;
-    Author: String;
-    Body: String;
+    id: number;
+    title: String;
+    date: String;
+    author: String;
+    body: String;
 }
 
 export interface Event {
-    Title: String;
-    Date: String;
-    Author: String;
-    Body: String;
+    id: number;
+    title: String;
+    date: String;
+    author: String;
+    body: String;
 }
 
 export interface BlogEntry {
-    Title: String;
-    Date: String;
-    Author: String;
-    Body: String;
+    id: number;
+    title: String;
+    date: String;
+    author: String;
+    body: String;
 }
