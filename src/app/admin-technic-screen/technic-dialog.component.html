@@ -1,29 +1,30 @@
 <h2 mat-dialog-title>Agregar Tecnica</h2>
-<mat-dialog-content>
-    <form>
+<form [formGroup]="technicForm" (ngSubmit)="onSubmit()">
+    <mat-dialog-content>
         <mat-form-field appearance="outline">
             <mat-label>Nombre</mat-label>
-            <input matInput>
+            <input matInput formControlName="nombre">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Nivel</mat-label>
-            <input matInput>
+            <input matInput formControlName="nivel">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Tipo</mat-label>
-            <input matInput>
+            <input matInput formControlName="tipo">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Video Explicacion</mat-label>
-            <input matInput>
+            <input matInput formControlName="videoExplain">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Video Ejemplo</mat-label>
-            <input matInput>
+            <input matInput formControlName="videoExampl">
         </mat-form-field>
-    </form>
-</mat-dialog-content>
-<mat-dialog-actions>
-    <button mat-button mat-dialog-close>Cancelar</button>
-    <button mat-button color="primary">Guardar</button>
-</mat-dialog-actions>
+
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-button mat-dialog-close>Cancelar</button>
+        <button mat-button color="primary" type="submit" [disabled]="!technicForm.valid">Guardar</button>
+    </mat-dialog-actions>
+</form>

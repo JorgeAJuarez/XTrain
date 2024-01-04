@@ -31,6 +31,8 @@ import { AlumnoDialogComponent } from './admin-alumn-screen/alumno-dialog.compon
 import { MatInputModule } from '@angular/material/input';
 import { TechnicDialogComponent } from './admin-technic-screen/technic-dialog.component';
 import { MatCardModule } from '@angular/material/card';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +68,7 @@ import { MatCardModule } from '@angular/material/card';
     MatPaginatorModule,
     MatTableModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule, FormsModule, ReactiveFormsModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
