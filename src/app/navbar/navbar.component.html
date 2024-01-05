@@ -1,13 +1,25 @@
 <mat-toolbar color="primary">
+
     <div class="right-buttons">
-        <span>OptimaTrain</span>
+
+
         <span class="spacer"></span>
-        <button mat-button routerLink="/">Home</button>
-        <button mat-button routerLink="/about">About</button>
+        <button mat-button routerLink="/admin/alumn">Alumnos</button>
+        <button mat-button routerLink="/admin/teacher">Profesores</button>
+        <button mat-button routerLink="/admin/technic">Tecnicas</button>
+        <button mat-button routerLink="/admin/train">Entrenamientos</button>
+        <!--button mat-button routerLink="/admin/events">Eventos</button>
+        <button mat-button routerLink="/admin/notice">Noticias</button-->
+
     </div>
+    <a routerLink="">
+        <img src="assets/HlogoGold.png" style="margin-top: 26px;" height="80px" alt="OptimaTrain" class="logo">
+    </a>
     <div class="right-buttons">
-        <button mat-button routerLink="/contact">Contact</button>
+        <button mat-button routerLink="/evaluations">Evaluaciones</button>
+        <button mat-button routerLink="/daily-train">Entrenamiento Diario</button>
+        <button mat-button routerLink="/dashboard">Dashboard</button>
         <button mat-button routerLink="/login" class="explore-button">Login</button>
+        <button mat-button routerLink="login" class="explore-button">Salir</button>
     </div>
-    <!-- Botón de hamburguesa -->
 </mat-toolbar>

@@ -8,7 +8,7 @@ import { Token } from '@angular/compiler';
 })
 export class AwsApiService {
 
-  private apiUrl = ' https://ut872ely07.execute-api.us-east-1.amazonaws.com/default/hwarangdoweb-api'; // Reemplaza con tu URL de AWS Lambda
+  private apiUrl = 'https://ut872ely07.execute-api.us-east-1.amazonaws.com/default/hwarangdoweb-api'; // Reemplaza con tu URL de AWS Lambda
 
   constructor(private http: HttpClient) { }
 

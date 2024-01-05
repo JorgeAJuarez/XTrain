@@ -52,6 +52,7 @@ import { HttpClientModule } from '@angular/common/http';
     AdminTeacherScreenComponent,
     AlumnoDialogComponent,
     TechnicDialogComponent
+
   ],
   imports: [
     BrowserModule,
