@@ -33,6 +33,8 @@ import { TechnicDialogComponent } from './admin-technic-screen/technic-dialog.co
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TeacherDialogComponent } from './admin-teacher-screen/teacher-dialog.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +53,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginScreenComponent,
     AdminTeacherScreenComponent,
     AlumnoDialogComponent,
-    TechnicDialogComponent
+    TechnicDialogComponent,
+    TeacherDialogComponent
 
   ],
   imports: [
@@ -69,7 +72,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatPaginatorModule,
     MatTableModule,
     MatInputModule,
-    MatCardModule, FormsModule, ReactiveFormsModule, HttpClientModule
+    MatCardModule, FormsModule, ReactiveFormsModule, HttpClientModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

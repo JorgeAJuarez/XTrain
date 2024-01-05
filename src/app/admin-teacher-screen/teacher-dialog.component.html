@@ -1,4 +1,4 @@
-<h2 mat-dialog-title>Agregar Nuevo Alumno</h2>
+<h2 mat-dialog-title>Agregar Nuevo Profesor</h2>
 <mat-dialog-content>
     <form>
         <mat-form-field appearance="outline">
@@ -8,6 +8,14 @@
         <mat-form-field appearance="outline">
             <mat-label>Nivel</mat-label>
             <input matInput>
+        </mat-form-field>
+        <!-- mat form field with a checkbox to select privilegies-->
+        <mat-form-field appearance="outline">
+            <mat-label>Privilegios</mat-label>
+            <mat-checkbox>Agregar Profesores</mat-checkbox>
+            <mat-checkbox>Agregar Alumnos</mat-checkbox>
+            <mat-checkbox>Agregar Tecnicas</mat-checkbox>
+            <mat-checkbox>Agregar Entrenamientos</mat-checkbox>
         </mat-form-field>
     </form>
 </mat-dialog-content>

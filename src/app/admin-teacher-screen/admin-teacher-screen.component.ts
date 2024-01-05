@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
-import { AlumnoDialogComponent } from '../admin-alumn-screen/alumno-dialog.component';
 import { Alumn } from '../train-model';
+import { TeacherDialogComponent } from './teacher-dialog.component';
 
 const ELEMENT_DATA: Alumn[] = [
   { id: 1, name: 'Fulanito de tal', level: 'Inicial', teacher: 'Sultanito de cuál', trains: [] }
@@ -19,7 +19,7 @@ export class AdminTeacherScreenComponent {
   constructor(public dialog: MatDialog) { }
 
   openDialog(): void {
-    this.dialog.open(AlumnoDialogComponent, {
+    this.dialog.open(TeacherDialogComponent, {
       width: '250px'
     });
   }
